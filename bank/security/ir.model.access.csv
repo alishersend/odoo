@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_bank_clients,access_bank_clients,model_bank_clients,base.group_user,1,1,1,1
+access_bank_clients_deposits,access_bank_clients_deposits,model_bank_clients_deposits,base.group_user,1,1,1,1
+access_bank_clients_credits,access_bank_clients_credits,model_bank_clients_credits,base.group_user,1,1,1,1
+access_bank_clients_card,access_bank_clients_card,model_bank_clients_card,base.group_user,1,1,1,1

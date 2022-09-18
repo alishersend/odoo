@@ -1,0 +1,19 @@
+<odoo>
+    <record id="bank_client_card_action" model="ir.actions.act_window">
+        <field name="name">Карты клиентов</field>
+        <field name="res_model">bank.clients.card</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record id="bank_clients_card_tree" model="ir.ui.view">
+        <field name="name">bank.clients.card.tree</field>
+        <field name="model">bank.clients.card</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

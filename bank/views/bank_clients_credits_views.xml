@@ -1,0 +1,16 @@
+<odoo>
+    <record id="bank_clients_credits_view_tree" model="ir.ui.view">
+        <field name="name">bank.clients.credits.tree</field>
+        <field name="model">bank.clients.credits</field>
+        <field name="arch" type="xml">
+            <tree string="Credits" editable="top">
+                <field name="credit_amount"/>
+                <field name="percent"/>
+                <field name="credit_type"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+</odoo>

@@ -1,0 +1,41 @@
+<odoo>
+    <record id="bank_clients_deposits_view_form" model="ir.ui.view">
+        <field name="name">bank.clients.deposits.form</field>
+        <field name="model">bank.clients.deposits</field>
+        <field name="arch" type="xml">
+            <form name="Deposits">
+                <sheet>
+                    <h3>
+                        <field name="name"/>
+                    </h3>
+                    <group>
+                        <group>
+                            <field name="percent"/>
+                            <field name="amount"/>
+                        </group>
+                        <group>
+                            <field name="date_of_create"/>
+                            <field name="date_of_end"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="bank_clients_deposits_view_tree" model="ir.ui.view">
+        <field name="name">bank.clients.deposits.tree</field>
+        <field name="model">bank.clients.deposits</field>
+        <field name="arch" type="xml">
+            <tree string="Deposits" decoration-success="valid=='valid'" decoration-danger="valid=='notvalid'">
+                <field name="amount"/>
+                <field name="percent"/>
+                <field name="date_of_end"/>
+                <button name="action_confirm" type="object" icon="fa-check" attrs="{'invisible': [('valid', '!=', False)]}"/>
+                <button name="action_cancel" type="object" icon="fa-times" attrs="{'invisible': [('valid', '!=', False)]}"/>
+                <field name="valid" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

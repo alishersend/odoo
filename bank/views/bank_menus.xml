@@ -1,0 +1,11 @@
+<odoo>
+    <menuitem id="bank_menu_root" name="bank">
+        <menuitem id="client_list" name="Clients list">
+            <menuitem id="bank_model_menu_action" action="bank_clients_action"/>
+        </menuitem>
+        <menuitem id="card_list" name="Card list">
+            <menuitem id="card_model_menu_action" action="bank_client_card_action"/>
+        </menuitem>
+    </menuitem>
+
+</odoo>
