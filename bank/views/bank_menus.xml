@@ -4,7 +4,11 @@
             <menuitem id="bank_model_menu_action" action="bank_clients_action"/>
         </menuitem>
         <menuitem id="card_list" name="Card list">
-            <menuitem id="card_model_menu_action" action="bank_client_card_action"/>
+            <menuitem
+                    id="card_model_menu_action"
+                    action="bank_client_card_action"
+                    groups="bank_group_administrator"/>
+
         </menuitem>
     </menuitem>
 

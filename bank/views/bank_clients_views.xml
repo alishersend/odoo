@@ -36,10 +36,10 @@
                     <notebook>
                         <page string="Дополнительно">
                             <group>
-                                <field name="description"/>
-                                <field name="passport_number"/>
-                                <field name="passport_date"/>
-                                <field name="passport_end_date"/>
+                                <field name="description" groups="base.bank_group_administrator"/>
+                                <field name="passport_number" groups="base.bank_group_administrator"/>
+                                <field name="passport_date" groups="base.bank_group_administrator"/>
+                                <field name="passport_end_date" groups="base.bank_group_administrator"/>
                             </group>
                         </page>
                         <page string="Депозиты" attrs="{'invisible': [('deposit', '=', False)]}">
